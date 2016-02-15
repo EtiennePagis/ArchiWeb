@@ -218,59 +218,48 @@
 
     {% endif %}
 
-			<!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3><i class="fa fa-map-marker"></i> Contact:</h3>
-                    <p class="footer-contact">
-                        Via Stevy le gros 15 rue des patapoufs<br>
-                        Phone: 06.des autres chiffres </br>
-                        Fax: Qui utilise encore ça en 2016 ?<br>
-                        Email: Bonjourpd@nomdedomaine.com<br>
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <h3><i class="fa fa-external-link"></i> Links</h3>
-                    <p> <a href="#"> Mon compte ( Access your profil )</a></p>
-                    <p> <a href="#"> Manga ( Our list of manga )</a></p>
-                    <p> <a href="#"> Anime ( Our list of anime )</a></p>
-                    <p> <a href="#"> FAQ ( Any question about the site )</a></p>
-                    <p> <a href="#"> Equipe ( Meet the Team )</a></p>
-                </div>
+    <!-- Footer -->
+  <footer>
+      <div class="container">
+          <div class="row">
               <div class="col-md-4">
-                <h3><i class="fa fa-heart"></i> Socialize</h3>
-                <div id="social-icons">
-                    <a href="#" class="btn-group google-plus">
-                        <i class="fa fa-google-plus"></i>
-                    </a>
-                      <a href="#" class="btn-group linkedin">
-                        <i class="fa fa-linkedin-square"></i>
-                    </a>
-                      <a href="#" class="btn-group twitter">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                      <a href="#" class="btn-group facebook">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                </div>
+                  <h3><i class="fa fa-map-marker"></i> Contact:</h3>
+                  <p class="footer-contact">
+                      Via Les devellopeur du site <br>
+                      Phone: 06.des autres chiffres </br>
+                      Fax: Qui utilise encore ça en 2016 ?<br>
+                      Email: BonjourGuillaume@nomdedomaine.com<br>
+                  </p>
               </div>
-        </div>
+              <div class="col-md-4">
+                  <h3><i class="fa fa-external-link"></i> Links</h3>
+                  <p> <a href="{% url 'monCompte' %}"> Mon compte ( Access your profil )</a></p>
+                  <p> <a href="{% url 'mangaListe' %}"> Manga ( Our list of manga )</a></p>
+                  <p> <a href="{% url 'animeListe' %}"> Anime ( Our list of anime )</a></p>
+              </div>
+            <div class="col-md-4">
+              <h3><i class="fa fa-heart"></i> Socialize</h3>
+              <div id="social-icons">
+                  <p> L'equipe de devellopeur est tres heureux de vous offrir ce site </br>
+                    Les copyright vont au proprietaire de ce bootstrap. Notre equipe c'est surtout occuper du back
+
+              </div>
+            </div>
       </div>
-    </footer>
-
-
-    <div class="copyright text center">
-        <p>&copy; Copyright 2014, <a href="#">Your Website Link</a>. Theme by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
     </div>
+  </footer>
 
 
-    <script type="text/javascript" src="/static/manga_anime/js/jquery-1.10.2.min.js"></script>
-    <script src="/static/manga_anime/assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/static/manga_anime/js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-  </body>
+  <div class="copyright text center">
+      <p>&copy; Copyright 2014, <a href="#">Your Website Link</a>. Theme by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
+  </div>
+
+
+  <script type="text/javascript" src="/static/manga_anime/js/jquery-1.10.2.min.js"></script>
+  <script src="/static/manga_anime/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/static/manga_anime/js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
 </html>

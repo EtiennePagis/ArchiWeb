@@ -123,5 +123,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    '/info/etu/l3spi/spi3069/spi3069/ArchiWeb/Office-master/web_anime/static',
+    'Users\etienne\Documents\Devoirs\ArchiWeb-master\web_anime\static',
 ]
