@@ -214,8 +214,14 @@
 
     {% else %}
 
-    <p> Vous n'etes pas connectez ! <a href="{% url 'connexion' %}"> Veuillez vous connectez </a> </p>
-
+	<div class="container">
+        <div class="row">
+			<div class="col-sm-8 col-md-8">
+				<h3 class="lead"> Non connecté  </h3><hr>
+				<p> Vous n'etes pas connectez ! <a href="{% url 'connexion' %}"> Veuillez vous connectez </a> </p>
+			</div>
+		</div>
+	</div>
     {% endif %}
 
     <!-- Footer -->

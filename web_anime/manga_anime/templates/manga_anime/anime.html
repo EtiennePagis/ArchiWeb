@@ -165,11 +165,8 @@
 
             </div>
             <div class="col-sm-8 col-md-8">
-                <h3 class="lead"id="anchor1"> Information sur le manga  </h3><hr>
-                <p>
-                    Ici seront mis les information sur le manga le synopsis et la date du prochain tome
-                    Il y aura aussi une image du tome
-                </p>
+                <h3 class="lead"id="anchor1"> Information sur l'animé  </h3><hr>
+                
 
                 <h4>
                   {% for anime in animes %}
@@ -183,6 +180,7 @@
                 <h4>Synopsis</h4>
                 <p>
           {% for anime in animes %}
+			Cette version animée a été produite par {{anime.studio}} </br>
             {{anime.synopsis}}
             Une note de {{anime.note}} pour un total de {{anime.nb_vote}} </br>
             Le prochain episode sort le {{anime.date_episode}} et toutes les autres semaines </br>

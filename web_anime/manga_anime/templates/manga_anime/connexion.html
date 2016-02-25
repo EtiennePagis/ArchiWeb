@@ -147,7 +147,7 @@
     </section>
     <!-- End #carousel-section -->
 
-    <h1>Se connecter</h1>
+    
 
     {% if error %}
       <p><strong>Utilisateur inconnu ou mauvais de mot de passe.</strong></p>
@@ -155,14 +155,21 @@
     {% if user.is_authenticated %}
       Vous êtes connecté, {{ user.username }} !
     {% else %}
-
-    <form method="post" action="">
-      {% csrf_token %}
-      {{ form.as_p }}
-      <input type="submit" value="Se connecter" />
-    </form>
-    <p> Pas de compte ? Ne vous inquietez pas <a href="{%url 'inscription'%}"> ici </a> </p>
-
+    
+    
+	<div class="container">
+        <div class="row">
+			<div class="col-sm-8 col-md-8">
+			<h3>Se connecter</h3>
+			<form method="post" action="">
+			{% csrf_token %}
+			{{ form.as_p }}
+			<input type="submit" value="Se connecter" />
+			</form>
+			<p> Pas de compte ? Ne vous inquietez pas cela ce passe <a href="{%url 'inscription'%}"> ici </a> </p>
+			</div>
+		</div>
+	</div>
     {% endif %}
 
     <!-- Footer -->

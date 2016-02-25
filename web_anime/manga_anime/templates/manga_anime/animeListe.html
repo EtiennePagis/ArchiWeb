@@ -167,7 +167,7 @@
                 <h3 class="lead"> Information sur le manga  </h3><hr>
                 <p>
                   {%for anime in animes %}
-                    <p> {{anime.titre}}  {{anime.studio}} {{anime.genre.nom_genre}}  <img src = {{anime.affiche.lien}} </img> <a href="{% url 'anime' anime_id=anime.id %}">  Plus d'info sur cet anime</a> </br> </p>
+                    <p> {{anime.titre}} {{anime.genre.nom_genre}}  <img src = {{anime.affiche.lien}} </img> <a href="{% url 'anime' anime_id=anime.id %}">  Plus d'info sur cet anime</a> </br> </p>
                   {%endfor%}
                 </p>
 
